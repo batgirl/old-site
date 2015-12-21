@@ -1,0 +1,237 @@
+#sequence {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  font-family: 'EB Garamond', serif;
+}
+
+/* Style the Sequence container */
+#sequence {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 0;
+  padding: 0;
+  color: white;
+}
+
+/* Reset */
+#sequence .seq-canvas,
+#sequence .seq-canvas > * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Make the canvas the same dimensions as the container and prevent lines from
+   wrapping so each step can sit side-by-side */
+#sequence .seq-canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+/* Make the steps the same size as the container and sit side-by-side */
+#sequence .seq-canvas > * {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  white-space: normal;
+  text-align: center;
+  color: white;
+}
+
+/* Used to vertically center align the .content element */
+#sequence .seq-canvas > li:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/* Vertically center align the .content element */
+#sequence .content {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4%;
+  font-size: 16px;
+}
+
+#sequence .step1 {
+  background-image: url("../images/window.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  background-color: #000;
+  color: black;
+}
+
+#sequence .step2 {
+  background-image: url("../images/apple.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  background-color: #000;
+}
+
+#sequence .step3 {
+  background-image: url("../images/dock.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  background-color: #000;
+}
+
+#sequence .step4 {
+  background-image: url("../images/railroad.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  background-color: #000;
+}
+
+#sequence h2,
+#sequence h3 {
+  margin: 0;
+  display: block;
+  line-height: 120%;
+}
+
+#sequence .step1 h2 {
+  position: relative;
+  margin-bottom: .5em;
+  font-family: 'Rouge Script', cursive;
+  font-size: 4em;
+  transform: rotate(-10deg);
+  font-weight: bold;
+  margin-top: 0;
+  bottom: 90px;
+  right: 10px;
+  letter-spacing: -2px;
+}
+
+#sequence .step1 h1 {
+  position: relative;
+  margin-bottom: 0;
+  font-family: 'Rouge Script', cursive;
+  font-size: 6em;
+  font-weight: bold;
+  letter-spacing: -5px;
+  transform: rotate(-10deg);
+  bottom: 40px;
+  right: 40px;
+}
+
+.step1 h3 {
+  text-align: center;
+  position: relative;
+  bottom: 60px;
+  right: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 48px;
+}
+
+.step1 a {
+  color: black;
+}
+
+.capital {
+  font-size: 1.25em;
+}
+
+#sequence h3 {
+  font-size: 1.4em;
+}
+
+.step3 .hr {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 1px;
+  background-color: black;
+  color: black;
+  border: none;
+}
+
+label {
+  padding-right: 10px;
+}
+
+input, label, textarea {
+  vertical-align: center;
+}
+
+.step4 a, .step4 a:hover {
+  color: white !important;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.seq-prev {
+  z-index: 100px;
+  position: absolute;
+  left: 80px;
+  bottom: 250px;
+}
+
+.seq-next {
+  z-index: 100px;
+  position: absolute;
+  right: 80px;
+  bottom: 250px;
+}
+
+button.seq-next, button.seq-prev {
+  font-size: 60px;
+  background: none;
+  border: none;
+  opacity: 0.8;
+}
+
+button.seq-next:hover, button.seq-prev:hover {
+  opacity: 0.5;
+}
+
+.bannerContainer {
+  position: relative; 
+  height: 600px;
+}
+
+.seq-screen {
+  position: absolute;
+  top: 0;
+}
+
+a.navHeader {
+  letter-spacing: 2px;
+  color: white !important; 
+  text-decoration: underline;
+}
+
+a.navHeader:hover {
+  text-decoration: underline;
+  opacity: 0.5;
+}
